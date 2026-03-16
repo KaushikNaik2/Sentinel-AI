@@ -1,0 +1,92 @@
+[
+    {
+        "regex": "otp|one.time.pass",
+        "type": "OTP_HARVEST",
+        "severity": "HIGH",
+        "reason": "OTP harvesting attempt"
+    },
+    {
+        "regex": "urgent|immediately|asap",
+        "type": "URGENCY",
+        "severity": "MEDIUM",
+        "reason": "Urgency manipulation"
+    },
+    {
+        "regex": "your account.*suspend",
+        "type": "THREAT",
+        "severity": "HIGH",
+        "reason": "Account threat"
+    },
+    {
+        "regex": "verify.*identity|kyc",
+        "type": "IDENTITY_HARVEST",
+        "severity": "HIGH",
+        "reason": "Identity harvesting"
+    },
+    {
+        "regex": "click here|click the link",
+        "type": "LINK_BAIT",
+        "severity": "MEDIUM",
+        "reason": "Link baiting"
+    },
+    {
+        "regex": "rbi|sbi|hdfc|icici.*offi",
+        "type": "IMPERSONATION",
+        "severity": "HIGH",
+        "reason": "Bank impersonation"
+    },
+    {
+        "regex": "won|lottery|prize|reward",
+        "type": "ADVANCE_FEE",
+        "severity": "HIGH",
+        "reason": "Advance fee scam"
+    },
+    {
+        "regex": "password.*expire",
+        "type": "CREDENTIAL_STEAL",
+        "severity": "HIGH",
+        "reason": "Credential phishing"
+    },
+    {
+        "regex": "dear\\s+(customer|user|sir|madam)",
+        "type": "GENERIC_GREETING",
+        "severity": "LOW",
+        "reason": "Generic greeting — common in phishing"
+    },
+    {
+        "regex": "update.*payment|billing.*information",
+        "type": "PAYMENT_HARVEST",
+        "severity": "HIGH",
+        "reason": "Payment information harvesting"
+    },
+    {
+        "regex": "social\\s*security|ssn|pan\\s*card",
+        "type": "SSN_HARVEST",
+        "severity": "HIGH",
+        "reason": "Government ID harvesting"
+    },
+    {
+        "regex": "act\\s*now|limited\\s*time|expires?\\s*(today|soon)",
+        "type": "SCARCITY",
+        "severity": "MEDIUM",
+        "reason": "Artificial scarcity / time pressure"
+    },
+    {
+        "regex": "wire\\s*transfer|western\\s*union|bitcoin|crypto\\s*wallet",
+        "type": "WIRE_FRAUD",
+        "severity": "HIGH",
+        "reason": "Untraceable payment request"
+    },
+    {
+        "regex": "congratulations|you\\s*have\\s*been\\s*selected",
+        "type": "ADVANCE_FEE",
+        "severity": "HIGH",
+        "reason": "Fake selection / prize scam"
+    },
+    {
+        "regex": "login.*credentials|username.*password",
+        "type": "CREDENTIAL_STEAL",
+        "severity": "HIGH",
+        "reason": "Credential harvesting attempt"
+    }
+]

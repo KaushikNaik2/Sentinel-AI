@@ -1,0 +1,30 @@
+INFO:     Started server process [33810]
+INFO:     Waiting for application startup.
+15:57:14 │ sentinel-ai                  │ INFO    │ 🛡️  Sentinel-AI Backend starting up...
+15:57:14 │ sentinel-ai                  │ INFO    │    LM Studio URL:  http://localhost:1234/v1
+15:57:14 │ sentinel-ai                  │ INFO    │    Model:          mistral-7b-instruct-v0.3
+15:57:14 │ sentinel-ai                  │ INFO    │    Frontend CORS:  http://localhost:5173
+15:57:14 │ sentinel-ai                  │ INFO    │    Security: CORS ✓ | Headers ✓ | Rate Limit ✓ | Validation ✓
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+INFO:     127.0.0.1:46658 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46668 - "GET /api/v1/monitor/metrics HTTP/1.1" 200 OK
+15:57:26 │ sentinel-ai.hibp             │ WARNING │ HIBP API key not configured — returning mock data
+15:57:30 │ httpx                        │ INFO    │ HTTP Request: GET http://ip-api.com/json/216.239.36.223?fields=status%2Ccountry%2Ccity%2CcountryCode "HTTP/1.1 200 OK"
+15:57:31 │ httpx                        │ INFO    │ HTTP Request: GET http://ip-api.com/json/216.239.34.223?fields=status%2Ccountry%2Ccity%2CcountryCode "HTTP/1.1 200 OK"
+15:57:31 │ httpx                        │ INFO    │ HTTP Request: GET http://ip-api.com/json/52.168.117.175?fields=status%2Ccountry%2Ccity%2CcountryCode "HTTP/1.1 200 OK"
+15:57:32 │ httpx                        │ INFO    │ HTTP Request: GET http://ip-api.com/json/142.250.194.234?fields=status%2Ccountry%2Ccity%2CcountryCode "HTTP/1.1 200 OK"
+15:57:33 │ httpx                        │ INFO    │ HTTP Request: GET http://ip-api.com/json/216.239.32.223?fields=status%2Ccountry%2Ccity%2CcountryCode "HTTP/1.1 200 OK"
+15:57:34 │ httpx                        │ INFO    │ HTTP Request: GET http://ip-api.com/json/216.239.38.223?fields=status%2Ccountry%2Ccity%2CcountryCode "HTTP/1.1 200 OK"
+15:57:34 │ httpx                        │ INFO    │ HTTP Request: GET http://ip-api.com/json/34.107.243.93?fields=status%2Ccountry%2Ccity%2CcountryCode "HTTP/1.1 200 OK"
+15:57:35 │ httpx                        │ INFO    │ HTTP Request: GET http://ip-api.com/json/34.54.84.110?fields=status%2Ccountry%2Ccity%2CcountryCode "HTTP/1.1 200 OK"
+15:57:36 │ httpx                        │ INFO    │ HTTP Request: GET http://ip-api.com/json/57.144.243.32?fields=status%2Ccountry%2Ccity%2CcountryCode "HTTP/1.1 200 OK"
+15:57:37 │ httpx                        │ INFO    │ HTTP Request: GET http://ip-api.com/json/142.251.221.225?fields=status%2Ccountry%2Ccity%2CcountryCode "HTTP/1.1 200 OK"
+15:57:37 │ httpx                        │ INFO    │ HTTP Request: GET http://ip-api.com/json/140.82.114.26?fields=status%2Ccountry%2Ccity%2CcountryCode "HTTP/1.1 200 OK"
+15:57:38 │ httpx                        │ INFO    │ HTTP Request: GET http://ip-api.com/json/151.101.209.91?fields=status%2Ccountry%2Ccity%2CcountryCode "HTTP/1.1 200 OK"
+15:57:38 │ sentinel-ai.routes.breach    │ WARNING │ Monitor data unavailable: invalid attr name 'connections'
+INFO:     127.0.0.1:46672 - "POST /api/v1/breach/check HTTP/1.1" 200 OK
+15:57:38 │ sentinel-ai.lmstudio         │ ERROR   │ LM Studio not reachable at http://localhost:1234/v1
+INFO:     127.0.0.1:34956 - "POST /api/v1/analyze/text HTTP/1.1" 200 OK
+15:57:39 │ sentinel-ai.routes.score     │ ERROR   │ Score calculation error: invalid attr name 'connections'
+INFO:     127.0.0.1:34962 - "GET /api/v1/score/ HTTP/1.1" 200 OK
