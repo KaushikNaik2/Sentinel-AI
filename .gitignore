@@ -1,0 +1,32 @@
+# Dependency Directories
+node_modules/
+dist/
+build/
+.next/
+env/
+venv/
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS Files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Environment Variables
+.env
+.env.local
+.env.*.local
+
+# Project Specific
+backend/monitor/logs/
+frontend/out/
