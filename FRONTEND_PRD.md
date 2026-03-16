@@ -1,4 +1,4 @@
-# CyberGuard AI — Frontend PRD
+# SentinelAI — Frontend PRD
 **Product**: AI-Powered Personal Cybersecurity Coaching Agent  
 **Version**: 1.0 — Hackathon MVP  
 **Stack**: React 18 + Vite + TailwindCSS + Recharts + Socket.IO client  
