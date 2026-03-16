@@ -1,4 +1,4 @@
-# CyberGuard AI — Backend PRD
+# Sentinel AI — Backend PRD
 **Product**: AI-Powered Personal Cybersecurity Coaching Agent  
 **Version**: 1.0 — Hackathon MVP  
 **Stack**: Python 3.11 + FastAPI + LM Studio (local LLM) + WebSockets + psutil  
